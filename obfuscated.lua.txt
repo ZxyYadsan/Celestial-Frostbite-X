@@ -1,0 +1,876 @@
+-- LUAOBF-8WN8Y | Obfuscated Lua script | 2026-11-15
+local function _d7x4mm(b,k)
+  local n=#k
+  if n==0 then return "" end
+  local o={}
+  for i=1,#b do
+    local x=b[i]
+    local y=k[((i-1)%n)+1]
+    local r=0
+    local p=1
+    while x>0 or y>0 do
+      local xb=x%2
+      local yb=y%2
+      if xb~=yb then r=r+p end
+      x=(x-xb)/2
+      y=(y-yb)/2
+      p=p*2
+    end
+    o[i]=string.char(r)
+  end
+  return table.concat(o)
+end
+
+
+
+
+
+
+
+
+print(_d7x4mm({54,59,50,8,48,56,75,4,9,37,71,27,17,9,33,18,33,3,42,34,78,77,59,21,43,15,108,123,8,80,19,14,57,41,91,67,83,110},{109,125,64,103,67,76,41}))
+local _p = game:GetService(_d7x4mm({110,37,51,54,55,18,77},{62,73,82,79,82,96}))
+local _f = game:GetService(_d7x4mm({50,63,26,80,4,11,1,46,15,88,62,28,15,40,11,91,8},{96,90,106,60,109,104}))
+local _m = game:GetService(_d7x4mm({54,90,11,64,42,71,30,71,23,122,11,64,21,64,13,87},{99,41,110,50}))
+local _c = game:GetService(_d7x4mm({123,23,22,32,77,6,13,55,89,9,16,32},{47,96,115,69,35,85,104,69}))
+local _e = game:GetService(_d7x4mm({96,80,49,47,19,78,65,99,37,52},{51,36,80,93,103,43}))
+local TextChatService = game:GetService(_d7x4mm({122,46,18,91,125,70,42,30,124,91,92,61,3,76,91},{46,75,106,47,62}))
+local _x = _p.LocalPlayer
+local _o = Enum.Font.Code
+local _k = Enum.Font.GothamBold
+local _n = _d7x4mm({7,95,56,9,55,78,61,13,40,26,7,21,42,94,61,15,37,78,49,76,11,84,116,56,43,74,116,156,219,174,229,76,18,83,55,5,43,79,39,76,13,73,116,33,61,26,7,3,42},{68,58,84,108})
+local function getPlayerLabel()
+    local _u = _x.DisplayName
+    local _a = _x.Name
+    if _u and _u ~= "" and _u ~= _a then
+        return string.upper(_u) .. _d7x4mm({7,69,104},{39,109,40,79,63,71,82,38}) .. _a .. ")"
+    end
+    return string.upper(_a)
+end
+local function broadcastBannerLine(_in)
+    pcall(function()
+        if TextChatService then
+            TextChatService:DisplaySystemMessage(_in)
+        end
+    end)
+    pcall(function()
+        _e:SetCore(
+            _d7x4mm({104,26,43,86,116,72,86,94,120,11,57,86,92,68,112,94,88,1,43,69,92},{43,114,74,34,57,41,61,59}),
+            { Text = _in, Color = Color3.fromRGB(100, 180, 255), Font = Enum.Font.Code }
+        )
+    end)
+    pcall(function()
+        local _q = _f:FindFirstChild(_d7x4mm({49,24,64,14,0,17,82,44,29,28,82,60,12,14,82,10,24,62,78,14,1,56,80,10,27,9,85},{117,125,38,111}))
+        if _q then
+            local _g = _q:FindFirstChild(_d7x4mm({57,14,64,31,56,45,59,52,13,10,107,55,44,43,45,38,30},{106,111,57,82,93,94,72,85}))
+            if _g then
+                _g:FireServer(_in, _d7x4mm({51,13,17},{114,97,125,103,66,57}))
+            end
+        end
+    end)
+end
+local function announceExecution()
+    local _h = getPlayerLabel()
+    local _b = {
+        _d7x4mm({191,241,250,209,164,132,191,241,250,209,164,132,191,241,250,209,164,132,191,241,250,209,164,132,191,241,250,209,164,132,191,241,250,209,164,132,191,241,250,209,164,132,191,241,250,209,164,132,191,241,250,209,164,132,191,241,250,209,164,132,191,241,250,209,164,132,191,241,250,209,164,132,191,241,250,209,164,132,191,241,250,209,164,132},{93,103,86,51,50,40}),
+        _d7x4mm({137,179,209,183,202,249,137,191,213,183,202,249,137,191,213,183,202,249,137,191,213,183,202,249,137,191,213,183,202,249,137,191,213,183,202,249,137,191,213,183,202,249,137,191,213,183,202,249,137,191,213,183,202,249,137,191,213,183,202,249,137,191,213,183,202,249,137,191,213,183,202,249,137,191,213,183,202,249,137,191,213,183,202,249,137,191,213,183,202,249,137,191,213,183,198,253},{107,43,84,85,94,120}),
+        _d7x4mm({102,124,115,122,102,124,115,184,218,250,115,28,3,124,21,40,41,47,39,56,47,40,54,122,30,124,177,198,224},{70,92,83,90}),
+        _d7x4mm({1,104,13,11,81,101,1,104,126,98,43,0,1,104,127,110,92,22,104,18,104,121},{33,72,45,43,113,69}),
+        _d7x4mm({131,208,189,206,196,224,170,172,173,178,245,201,218,184,209,131,220,185,206,196,224,170,172,173,178,245,201,218,184,209,131,220,185,206,196,224,170,172,173,178,245,201,218,184,209,131,220,185,206,196,224,170,172,173,178,245,201,218,184,209,131,220,185,206,196,224,170,172,173,178,245,201,218,184,209,131,220,185,206,196,224,170,172,173,178,245,201,218,184,209,131,220,185,206,200,228},{97,72,56,44,80}),
+        _d7x4mm({83,75,120,68,90,67,121,70,82,66,123,69,91,74,20,52,62,41,4,56,62,46,113,46,34,74,113,68,90,67,121,77,82,66,123,69,83,64,120},{123,106,81,108}),
+        _d7x4mm({120,98,83,119,120,98,83,119,120,160,236,252,120},{88,66,115,87}) .. _h .. " ⟪",
+        _d7x4mm({94,18,113,94,87,26,112,92,95,27,114,95,86,19,20,57,55,119,29,50,86,209,196,229,86,19,112,87,95,27,121,95,94,25,113,94,92,26},{118,51,88,118}),
+        _d7x4mm({182,187,250,186,218,219,182,187,250,186,218,219,182,187,250,186,218,219,182,187,250,186,218,219,182,187,250,186,218,219,182,187,250,186,218,219,182,187,250,186,218,219,182,187,250,186,218,219,182,187,250,186,218,219,182,187,250,186,218,219,182,187,250,186,218,219,182,187,250,186,218,219,182,187,250,186,218,219,182,187,250,186,218,219},{84,45,86,88,76,119}),
+    }
+    task.spawn(function()
+        for _og, bannerLine in ipairs(_b) do
+            broadcastBannerLine(bannerLine)
+            task.wait(0.35)
+        end
+    end)
+end
+announceExecution()
+pcall(function()
+    _e:SetCore(
+        _d7x4mm({56,88,46,12,21,55,31,84,38,1,56,57,31,84,47,6},{107,61,64,104,91,88}),
+        { Title = _d7x4mm({35,82,20,36,30,31,94,1,91,88,7,31,4,68,20,85,17,53,8,75,111,64,101,29,108,62,2,77,5},{96,55,120,65,109,107,55}), Text = _d7x4mm({49,32,93,7,51,90,93,45,69,67},{125,79,60,99,86,62}) .. getPlayerLabel(), Duration = 5 }
+    )
+end)
+local _l
+local function getNet()
+    if _l then
+        return _l
+    end
+    local _d, loadedNet = pcall(function()
+        local _y = _f:WaitForChild(_d7x4mm({56,75,64,18,23,18,33},{117,36,36,103,123,119,82,64}), 5)
+        if not _y then
+            return
+        end
+        local _t = _y:WaitForChild(_d7x4mm({63,63,54,27},{124,80,68,126,49,115}), 5)
+        if not _t then
+            return
+        end
+        local _v = _t:WaitForChild(_d7x4mm({4,27,60},{74,126,72,100,117,68,61,90}), 5)
+        if not _v then
+            return
+        end
+        return require(_v)
+    end)
+    if _d and loadedNet then
+        _l = loadedNet
+    end
+    return _l
+end
+local _i = {}
+local function setBioStatus(_wl)
+    for _gu, statusListener in ipairs(_i) do
+        pcall(statusListener, _wl)
+    end
+end
+local function setBio(_gz)
+    _gz = _gz or 5
+    local _s = getNet()
+    if not _s or not _s.send then
+        return
+    end
+    for _hf = 1, _gz do
+        local _r = 0
+        while (not _x.Character or not _x.Character:FindFirstChild("HumanoidRootPart")) and _r < 10 do
+            task.wait(0.5)
+            _r = _r + 0.5
+        end
+        if _x.Character and _x.Character:FindFirstChild(_d7x4mm({50,42,85,39,20,48,81,34,40,48,87,50,42,62,74,50},{122,95,56,70})) then
+            
+            setBioStatus(_d7x4mm({86,80,3,86,65,27,9},{37,53,119,34,40,117,110,87}))
+            pcall(function()
+                _s.send("_I7", _n)
+            end)
+            task.wait(0.15)
+            for _ty, bioEventName in ipairs({
+                "roleplay_bio",
+                "set_bio",
+                "bio",
+                "setBio",
+                "set_about",
+                "about",
+            }) do
+                pcall(function()
+                    _s.send(bioEventName, _n)
+                end)
+                task.wait(0.08)
+            end
+            task.wait(0.8)
+            setBioStatus(_d7x4mm({88,20,50},{43,113,70,71,87,46,121}))
+            print(_d7x4mm({42,22,31,25,65,30,17,77,5,53,77,46,111,74,49,77,30,112,30,19,92,30,83,198,237,195,77,94,83,30,7,65,28,32,25,86},{113,80,109,118,50,106,115,36}) .. _hf .. ")")
+            return true, _hf
+        end
+    end
+    setBioStatus(_d7x4mm({61,92,69,25},{91,61,44,117,64,112}))
+    return false
+end
+local function averageBodyColor(_bt)
+    local _z = _bt and _bt:FindFirstChildOfClass(_d7x4mm({43,63,84,49,7,19,60,58,27,35},{105,80,48,72,68,124,80,85}))
+    if not _z then
+        return nil
+    end
+    local _j = {
+        _z.HeadColor3,
+        _z.LeftArmColor3,
+        _z.RightArmColor3,
+        _z.TorsoColor3,
+        _z.LeftLegColor3,
+        _z.RightLegColor3,
+    }
+    local _w, greenSum, blueSum = 0, 0, 0
+    for _qn, color in ipairs(_j) do
+        _w, greenSum, blueSum = _w + color.R, greenSum + color.G, blueSum + color.B
+    end
+    return Color3.new(_w / 6, greenSum / 6, blueSum / 6)
+end
+local function serializeDescription(_li)
+    local _kl = {
+        accessories = {},
+        properties = {
+            Head = _li.Head or 0,
+            Torso = _li.Torso or 0,
+            LeftArm = _li.LeftArm or 0,
+            RightArm = _li.RightArm or 0,
+            LeftLeg = _li.LeftLeg or 0,
+            RightLeg = _li.RightLeg or 0,
+            Face = _li.Face or 0,
+            Shirt = _li.Shirt or 0,
+            Pants = _li.Pants or 0,
+            GraphicTShirt = _li.GraphicTShirt or 0,
+            RunAnimation = _li.RunAnimation or 0,
+            WalkAnimation = _li.WalkAnimation or 0,
+            JumpAnimation = _li.JumpAnimation or 0,
+            FallAnimation = _li.FallAnimation or 0,
+            ClimbAnimation = _li.ClimbAnimation or 0,
+            IdleAnimation = _li.IdleAnimation or 0,
+            SwimAnimation = _li.SwimAnimation or 0,
+            HeightScale = _li.HeightScale or 1,
+            WidthScale = _li.WidthScale or 1,
+            DepthScale = _li.DepthScale or 1,
+            HeadScale = _li.HeadScale or 1,
+            BodyTypeScale = _li.BodyTypeScale or 0,
+            ProportionScale = _li.ProportionScale or 0,
+        },
+    }
+    pcall(function()
+        for _he, accessory in ipairs(_li:GetAccessories(true)) do
+            table.insert(_kl.accessories, {
+                Rotation = _d7x4mm({24,2,23,104,23},{40,34,39,72,39,66,49,97}),
+                Position = _d7x4mm({127,28,74,70,105},{79,60,122,102,89,111,66,100}),
+                Scale = _d7x4mm({71,23,84,96,70},{118,55,101,64,119}),
+                IsLayered = accessory.IsLayered,
+                AccessoryType = accessory.AccessoryType.Name,
+                AssetId = accessory.AssetId,
+                Order = accessory.Order or 0,
+                Puffiness = accessory.Puffiness or 0,
+            })
+        end
+    end)
+    return _kl
+end
+local function applyResize(_kn, _ay, _oy)
+    _oy = _oy or _kn
+    local _le = getNet()
+    if not _le then
+        return false, _d7x4mm({97,22,94,97,85,13,50,92,26,68,38},{47,115,42,65,56,100,65})
+    end
+    local _zn = _x.Character
+    if not _zn then
+        return false, _d7x4mm({36,34,123,10,55,77,67},{106,77,91,105,95,44,49})
+    end
+    local _fv = _zn:FindFirstChildOfClass(_d7x4mm({18,44,22,77,21,53,48,31},{90,89,123,44,123}))
+    if not _fv then
+        return false, _d7x4mm({20,71,115,74,23,47,90,52,71,58,70},{90,40,83,34,98,66,59})
+    end
+    local _rj = averageBodyColor(_zn)
+    local _gr, appliedDescription = pcall(function()
+        return _fv:GetAppliedDescription()
+    end)
+    if not _gr or not appliedDescription then
+        return false, _d7x4mm({106,46,39,78,14,45,53,68,66},{46,75,84,45})
+    end
+    local _bx = serializeDescription(appliedDescription)
+    _bx.properties.HeightScale = _kn
+    _bx.properties.WidthScale = _ay
+    _bx.properties.DepthScale = _ay
+    _bx.properties.HeadScale = _oy
+    local _ou = pcall(function()
+        _le.send("wear_outfit_from_desc", _bx)
+    end)
+    if not _ou then
+        return false, _d7x4mm({100,68,16,76,15,16,90,30,91},{55,33,126,40,47,118,59,119})
+    end
+    task.wait(0.25)
+    if _rj then
+        pcall(function()
+            _le.send("skin_tone", _rj)
+        end)
+    end
+    return true, string.format("H=%.1f W=%.1f Head=%.1f", _kn, _ay, _oy)
+end
+local function autoWidthForHeight(_cm)
+    if _cm <= 1 then
+        return 1
+    end
+    return math.max(1, math.floor(1 + (_cm - 1) * 1.34 + 0.5))
+end
+local function autoHeadForHeight(_qa)
+    if _qa <= 1 then
+        return 1
+    end
+    return math.max(1, math.floor(_qa + 0.5))
+end
+local function createGui()
+    local _fp = _x:WaitForChild(_d7x4mm({40,27,79,68,90,10,48,91,84},{120,119,46,61,63}))
+    local _mc = _fp:FindFirstChild(_d7x4mm({106,71,69,94,8,51,69,65,79,117,46,52,95,92,80,72,14},{44,53,42,45,124,81}))
+    if _mc then
+        _mc:Destroy()
+    end
+    local _uy = Instance.new(_d7x4mm({59,95,68,80,82,64,113,11,1},{104,60,54,53,55,46,54,126}))
+    _uy.Name = _d7x4mm({45,56,0,56,10,26,69,55,14,18,61,46,13,17,86,38,25},{107,74,111,75,126,120,44,67})
+    _uy.ResetOnSpawn = false
+    _uy.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+    _uy.Parent = _fp
+    local _ep = Instance.new(_d7x4mm({100,50,33,53,80},{34,64,64,88,53}))
+    _ep.Size = UDim2.new(0, 460, 0, 720)
+    _ep.Position = UDim2.new(0.5, -230, 0.5, -360)
+    _ep.BackgroundColor3 = Color3.fromRGB(10, 12, 16)
+    _ep.BorderSizePixel = 0
+    _ep.Active = true
+    _ep.Draggable = true
+    _ep.Parent = _uy
+    Instance.new(_d7x4mm({8,24,107,52,3,51,52,90},{93,81,40,91,113}), _ep).CornerRadius = UDim.new(0, 8)
+    local _wg = Instance.new(_d7x4mm({52,125,102,49,48,82,65,5},{97,52,53,69,66,61,42,96}), _ep)
+    _wg.Color = Color3.fromRGB(0, 255, 130)
+    _wg.Thickness = 1
+    _wg.Transparency = 0.3
+    local _ua = Instance.new(_d7x4mm({39,49,29,45,4},{97,67,124,64}))
+    _ua.Size = UDim2.new(1, 0, 0, 44)
+    _ua.BackgroundColor3 = Color3.fromRGB(16, 20, 26)
+    _ua.BorderSizePixel = 0
+    _ua.Parent = _ep
+    Instance.new(_d7x4mm({120,9,52,15,51,68,33,9},{45,64,119,96,65,42,68,123}), _ua).CornerRadius = UDim.new(0, 8)
+    local _gh = Instance.new(_d7x4mm({56,92,32,0,57},{126,46,65,109,92}))
+    _gh.Size = UDim2.new(1, 0, 0, 20)
+    _gh.Position = UDim2.new(0, 0, 1, -20)
+    _gh.BackgroundColor3 = Color3.fromRGB(16, 20, 26)
+    _gh.BorderSizePixel = 0
+    _gh.Parent = _ua
+    local _uw = Instance.new(_d7x4mm({108,85,62,85,24},{42,39,95,56,125,44}))
+    _uw.Size = UDim2.new(1, 0, 0, 1)
+    _uw.Position = UDim2.new(0, 0, 1, -1)
+    _uw.BackgroundColor3 = Color3.fromRGB(0, 255, 130)
+    _uw.BorderSizePixel = 0
+    _uw.Parent = _ua
+    local _ed = Instance.new(_d7x4mm({114,79,89,40,39},{52,61,56,69,66,37,92,35}))
+    _ed.Size = UDim2.new(0, 8, 0, 8)
+    _ed.Position = UDim2.new(0, 14, 0.5, -4)
+    _ed.BackgroundColor3 = Color3.fromRGB(0, 255, 130)
+    _ed.BorderSizePixel = 0
+    _ed.Parent = _ua
+    Instance.new(_d7x4mm({21,121,106,57,86,46,85,91},{64,48,41,86,36}), _ed).CornerRadius = UDim.new(1, 0)
+    local _ei = Instance.new(_d7x4mm({24,61,15,37,0,57,21,52,32},{76,88,119,81}))
+    _ei.Size = UDim2.new(1, -60, 1, 0)
+    _ei.Position = UDim2.new(0, 30, 0, 0)
+    _ei.BackgroundTransparency = 1
+    _ei.Text = _d7x4mm({130,206,202,194,216,219,74,110,5,56,15,94,20,61,11,65,64,18,24,66,19,32,8,68,20,49,74,117,64,6,15,0,51,61,16,72,64,22,19,13,57,53,14,94,1,58,74,111,8,53,3,84,1},{96,84,106,45})
+    _ei.TextColor3 = Color3.fromRGB(220, 240, 230)
+    _ei.Font = _k
+    _ei.TextSize = 13
+    _ei.TextXAlignment = Enum.TextXAlignment.Left
+    _ei.Parent = _ua
+    local _td = Instance.new(_d7x4mm({124,28,14,26,15,93,13,2,1,35},{40,121,118,110,77}))
+    _td.Size = UDim2.new(0, 30, 0, 30)
+    _td.Position = UDim2.new(1, -37, 0, 7)
+    _td.BackgroundColor3 = Color3.fromRGB(60, 20, 20)
+    _td.Text = "×"
+    _td.TextColor3 = Color3.fromRGB(255, 120, 120)
+    _td.Font = _k
+    _td.TextSize = 20
+    _td.Parent = _ua
+    Instance.new(_d7x4mm({106,4,23,22,77,35,49,11},{63,77,84,121}), _td).CornerRadius = UDim.new(0, 4)
+    _td.MouseButton1Click:Connect(function()
+        _uy:Destroy()
+    end)
+    local _ll = Instance.new(_d7x4mm({59,3,17,9,27},{125,113,112,100,126}))
+    _ll.Size = UDim2.new(1, -20, 0, 26)
+    _ll.Position = UDim2.new(0, 10, 0, 48)
+    _ll.BackgroundColor3 = Color3.fromRGB(40, 30, 10)
+    _ll.BorderSizePixel = 0
+    _ll.Parent = _ep
+    Instance.new(_d7x4mm({17,53,125,64,64,49,2,24},{68,124,62,47,50,95,103,106}), _ll).CornerRadius = UDim.new(0, 4)
+    local _tm = Instance.new(_d7x4mm({109,12,26,8,72,8,93,93},{56,69,73,124,58,103,54}), _ll)
+    _tm.Color = Color3.fromRGB(255, 200, 100)
+    _tm.Thickness = 1
+    _tm.Transparency = 0.4
+    local _up = Instance.new(_d7x4mm({49,47,32,94,41,43,58,79,9},{101,74,88,42}))
+    _up.Size = UDim2.new(1, -20, 1, 0)
+    _up.Position = UDim2.new(0, 10, 0, 0)
+    _up.BackgroundTransparency = 1
+    _up.Text = _d7x4mm({178,228,131,96,18,2,95,122,112,2,94,41,36,2,81,44,57,17,89,46,55,69,30,110},{80,107,48,64})
+    _up.TextColor3 = Color3.fromRGB(255, 220, 100)
+    _up.Font = _o
+    _up.TextSize = 10
+    _up.TextXAlignment = Enum.TextXAlignment.Left
+    _up.Parent = _ll
+    local function onBioStatusChanged(_hr)
+        if _hr == _d7x4mm({22,52,77},{101,81,57,46,107,90,103,113}) then
+            _up.Text = _d7x4mm({139,251,225,202,9,57,13,26,98,9},{123,100,117,88,41}) .. _n .. _d7x4mm({22,95,214,181,221,83},{54,119,52,41,78,122,47,67})
+            _up.TextColor3 = Color3.fromRGB(150, 255, 150)
+            _tm.Color = Color3.fromRGB(0, 255, 130)
+            _ll.BackgroundColor3 = Color3.fromRGB(14, 30, 22)
+        elseif _hr == _d7x4mm({36,77,18,45,0,14,48},{87,40,102,89,105,96}) then
+            _up.Text = _d7x4mm({153,245,218,82,3,6,15,14,0,28,55,67,25,19,6,92,126,77},{123,122,105,114,80,99})
+            _up.TextColor3 = Color3.fromRGB(255, 220, 100)
+        else
+            _up.Text = _d7x4mm({205,189,203,104,38,5,53,15,87,14,38,0,5,52,72,9,69,102},{47,39,107,72,100,108,90})
+            _up.TextColor3 = Color3.fromRGB(255, 150, 150)
+        end
+    end
+    table.insert(_i, onBioStatusChanged)
+    local _hq = Instance.new(_d7x4mm({34,22,42,33,36},{100,100,75,76,65,77,70}))
+    _hq.Size = UDim2.new(1, -20, 0, 22)
+    _hq.Position = UDim2.new(0, 10, 1, -28)
+    _hq.BackgroundColor3 = Color3.fromRGB(14, 18, 24)
+    _hq.BorderSizePixel = 0
+    _hq.Parent = _ep
+    Instance.new(_d7x4mm({18,107,120,82,53,76,94,79},{71,34,59,61}), _hq).CornerRadius = UDim.new(0, 4)
+    local _fd = Instance.new(_d7x4mm({104,34,3,35,47},{46,80,98,78,74,101,42}))
+    _fd.Size = UDim2.new(0, 6, 0, 6)
+    _fd.Position = UDim2.new(0, 8, 0.5, -3)
+    _fd.BackgroundColor3 = Color3.fromRGB(0, 255, 130)
+    _fd.BorderSizePixel = 0
+    _fd.Parent = _hq
+    Instance.new(_d7x4mm({55,126,23,10,46,85,6,91},{98,55,84,101,92,59,99,41}), _fd).CornerRadius = UDim.new(1, 0)
+    local _vm = Instance.new(_d7x4mm({23,71,36,8,18,87,47,38,78},{67,34,92,124,94,54,77}))
+    _vm.Size = UDim2.new(1, -30, 1, 0)
+    _vm.Position = UDim2.new(0, 22, 0, 0)
+    _vm.BackgroundTransparency = 1
+    _vm.Text = _d7x4mm({66,68,50,12,56,16,227,228,72,37,66,64,52,72,53,89,85,63,13,97,82,64,33},{48,33,83,104,65})
+    _vm.TextColor3 = Color3.fromRGB(120, 150, 140)
+    _vm.Font = _o
+    _vm.TextSize = 10
+    _vm.TextXAlignment = Enum.TextXAlignment.Left
+    _vm.Parent = _hq
+    local function setFooter(_ni, _jc)
+        _vm.Text = _ni
+        _vm.TextColor3 = _jc or Color3.fromRGB(120, 150, 140)
+    end
+    local _or = Instance.new(_d7x4mm({122,16,83,63,0,60,23,6,78,53,83,49,1,53},{41,115,33,80,108,80,126,104}))
+    _or.Size = UDim2.new(1, -20, 1, -110)
+    _or.Position = UDim2.new(0, 10, 0, 80)
+    _or.BackgroundTransparency = 1
+    _or.BorderSizePixel = 0
+    _or.ScrollBarThickness = 4
+    _or.ScrollBarImageColor3 = Color3.fromRGB(0, 200, 110)
+    _or.CanvasSize = UDim2.new(0, 0, 0, 3000)
+    _or.Parent = _ep
+    local _pp = Instance.new(_d7x4mm({61,36,17,68,9,47,36,12,36,66,15,47},{104,109,93,45,122,91}), _or)
+    _pp.Padding = UDim.new(0, 8)
+    _pp.SortOrder = Enum.SortOrder.LayoutOrder
+    local function createSection(_dx, _gc)
+        local _xl = Instance.new(_d7x4mm({100,50,76,42,62},{34,64,45,71,91,57}))
+        _xl.Size = UDim2.new(1, 0, 0, 22)
+        _xl.BackgroundColor3 = Color3.fromRGB(14, 18, 24)
+        _xl.BorderSizePixel = 0
+        _xl.LayoutOrder = _gc
+        _xl.Parent = _or
+        Instance.new(_d7x4mm({21,44,48,43,75,1,37,23},{64,101,115,68,57,111}), _xl).CornerRadius = UDim.new(0, 3)
+        local _an = Instance.new(_d7x4mm({113,64,87,72,22},{55,50,54,37,115,112}))
+        _an.Size = UDim2.new(0, 3, 1, -8)
+        _an.Position = UDim2.new(0, 8, 0, 4)
+        _an.BackgroundColor3 = Color3.fromRGB(0, 255, 130)
+        _an.BorderSizePixel = 0
+        _an.Parent = _xl
+        local _rb = Instance.new(_d7x4mm({0,16,59,95,18,56,80,89,56},{84,117,67,43,94,89,50,60}))
+        _rb.Size = UDim2.new(1, -25, 1, 0)
+        _rb.Position = UDim2.new(0, 20, 0, 0)
+        _rb.BackgroundTransparency = 1
+        _rb.Text = _dx
+        _rb.TextColor3 = Color3.fromRGB(180, 220, 200)
+        _rb.Font = _o
+        _rb.TextSize = 11
+        _rb.TextXAlignment = Enum.TextXAlignment.Left
+        _rb.Parent = _xl
+    end
+    local function createSlider(_ma, _hi, _nw, _ey, _vf, _nz)
+        local _il = Instance.new(_d7x4mm({59,40,68,89,18},{125,90,37,52,119}))
+        _il.Size = UDim2.new(1, 0, 0, 88)
+        _il.BackgroundColor3 = Color3.fromRGB(18, 22, 28)
+        _il.BorderSizePixel = 0
+        _il.LayoutOrder = _nz
+        _il.Parent = _or
+        Instance.new(_d7x4mm({112,15,7,48,87,40,33,45},{37,70,68,95}), _il).CornerRadius = UDim.new(0, 4)
+        local _jn = Instance.new(_d7x4mm({15,16,119,30,44,72,49,60},{90,89,36,106,94,39}), _il)
+        _jn.Color = Color3.fromRGB(38, 48, 58)
+        _jn.Thickness = 1
+        local _lv = Instance.new(_d7x4mm({61,37,84,21,37,33,78,4,5},{105,64,44,97}))
+        _lv.Size = UDim2.new(1, -180, 0, 26)
+        _lv.Position = UDim2.new(0, 12, 0, 4)
+        _lv.BackgroundTransparency = 1
+        _lv.Text = _ma
+        _lv.TextColor3 = Color3.fromRGB(210, 225, 235)
+        _lv.Font = _o
+        _lv.TextSize = 12
+        _lv.TextXAlignment = Enum.TextXAlignment.Left
+        _lv.Parent = _il
+        local _dt = Instance.new(_d7x4mm({103,49,81,82,13,13,71,32,70,72},{51,84,41,38,79,120}))
+        _dt.Size = UDim2.new(0, 22, 0, 24)
+        _dt.Position = UDim2.new(1, -128, 0, 4)
+        _dt.BackgroundColor3 = Color3.fromRGB(45, 22, 22)
+        _dt.Text = "−"
+        _dt.TextColor3 = Color3.fromRGB(255, 110, 110)
+        _dt.Font = _k
+        _dt.TextSize = 16
+        _dt.Parent = _il
+        Instance.new(_d7x4mm({16,22,36,84,55,49,2,73},{69,95,103,59}), _dt).CornerRadius = UDim.new(0, 3)
+        local _mi = Instance.new(_d7x4mm({48,79,80,59,96,5,85},{100,42,40,79,34,106,45}))
+        _mi.Size = UDim2.new(0, 72, 0, 24)
+        _mi.Position = UDim2.new(1, -104, 0, 4)
+        _mi.BackgroundColor3 = Color3.fromRGB(6, 8, 12)
+        _mi.BorderSizePixel = 0
+        _mi.Text = tostring(_hi)
+        _mi.TextColor3 = Color3.fromRGB(0, 255, 130)
+        _mi.Font = _o
+        _mi.TextSize = 13
+        _mi.ClearTextOnFocus = false
+        _mi.Parent = _il
+        local _sa = Instance.new(_d7x4mm({29,20,111,22,58,50,87,7},{72,93,60,98}), _mi)
+        _sa.Color = Color3.fromRGB(0, 180, 100)
+        _sa.Thickness = 1
+        Instance.new(_d7x4mm({105,104,10,57,78,79,44,36},{60,33,73,86}), _mi).CornerRadius = UDim.new(0, 3)
+        local _se = Instance.new(_d7x4mm({42,88,81,47,113,23,53,94,17,83},{126,61,41,91,51,98,65,42}))
+        _se.Size = UDim2.new(0, 22, 0, 24)
+        _se.Position = UDim2.new(1, -28, 0, 4)
+        _se.BackgroundColor3 = Color3.fromRGB(22, 45, 28)
+        _se.Text = "+"
+        _se.TextColor3 = Color3.fromRGB(110, 255, 140)
+        _se.Font = _k
+        _se.TextSize = 14
+        _se.Parent = _il
+        Instance.new(_d7x4mm({44,28,61,17,35,23,48,12},{121,85,126,126,81}), _se).CornerRadius = UDim.new(0, 3)
+        local _zh = Instance.new(_d7x4mm({7,87,42,30,36},{65,37,75,115}))
+        _zh.Size = UDim2.new(1, -24, 0, 8)
+        _zh.Position = UDim2.new(0, 12, 0, 42)
+        _zh.BackgroundColor3 = Color3.fromRGB(28, 34, 42)
+        _zh.BorderSizePixel = 0
+        _zh.Parent = _il
+        Instance.new(_d7x4mm({10,107,107,5,6,83,58,80},{95,34,40,106,116,61}), _zh).CornerRadius = UDim.new(1, 0)
+        local _qi = Instance.new(_d7x4mm({44,39,81,78,53},{106,85,48,35,80,61,39}))
+        _qi.Size = UDim2.new(0, 0, 1, 0)
+        _qi.BackgroundColor3 = Color3.fromRGB(0, 220, 120)
+        _qi.BorderSizePixel = 0
+        _qi.Parent = _zh
+        Instance.new(_d7x4mm({111,98,29,20,63,84,78,44},{58,43,94,123,77}), _qi).CornerRadius = UDim.new(1, 0)
+        local _pg = Instance.new(_d7x4mm({55,15,92,62,32},{113,125,61,83,69,98,47,104}))
+        _pg.Size = UDim2.new(0, 14, 0, 14)
+        _pg.AnchorPoint = Vector2.new(0.5, 0.5)
+        _pg.Position = UDim2.new(0, 0, 0.5, 0)
+        _pg.BackgroundColor3 = Color3.fromRGB(250, 250, 250)
+        _pg.BorderSizePixel = 0
+        _pg.Parent = _zh
+        Instance.new(_d7x4mm({98,48,20,75,76,89,28,37},{55,121,87,36,62}), _pg).CornerRadius = UDim.new(1, 0)
+        local _fj = Instance.new(_d7x4mm({14,60,44,77,26,59,59,49,85},{90,89,84,57,86}))
+        _fj.Size = UDim2.new(1, -24, 0, 14)
+        _fj.Position = UDim2.new(0, 12, 0, 62)
+        _fj.BackgroundTransparency = 1
+        _fj.Text = string.format("range %s – %s   (drag slider or type)", tostring(_nw), tostring(_ey))
+        _fj.TextColor3 = Color3.fromRGB(90, 105, 115)
+        _fj.Font = _o
+        _fj.TextSize = 9
+        _fj.TextXAlignment = Enum.TextXAlignment.Left
+        _fj.Parent = _il
+        local _kc = _hi
+        local _dd = {}
+        local function fireSliderChanged(_al)
+            for _hh, sliderListener in ipairs(_dd) do
+                pcall(sliderListener, _al)
+            end
+        end
+        local function updateSliderVisuals(_ho)
+            local _pi = math.clamp((_ho - _nw) / (_ey - _nw), 0, 1)
+            _qi.Size = UDim2.new(_pi, 0, 1, 0)
+            _pg.Position = UDim2.new(_pi, 0, 0.5, 0)
+            _mi.Text = tostring(_ho)
+        end
+        local function setSliderValue(_mz, _zu)
+            _mz = math.clamp(_mz, _nw, _ey)
+            if not _zu then
+                _mz = math.floor(_mz / _vf + 0.5) * _vf
+            end
+            _kc = _mz
+            updateSliderVisuals(_mz)
+            fireSliderChanged(_mz)
+        end
+        _mi.FocusLost:Connect(function()
+            local _qw = tonumber(_mi.Text)
+            if _qw then
+                setSliderValue(_qw, true)
+            else
+                _mi.Text = tostring(_kc)
+            end
+        end)
+        _dt.MouseButton1Click:Connect(function()
+            setSliderValue(_kc - _vf)
+        end)
+        _se.MouseButton1Click:Connect(function()
+            setSliderValue(_kc + _vf)
+        end)
+        local _wj = false
+        local function setSliderFromX(_gm)
+            local _rq =
+                math.clamp((_gm - _zh.AbsolutePosition.X) / math.max(_zh.AbsoluteSize.X, 1), 0, 1)
+            setSliderValue(_nw + _rq * (_ey - _nw))
+        end
+        _zh.InputBegan:Connect(function(_jd)
+            if
+                _jd.UserInputType == Enum.UserInputType.MouseButton1
+                or _jd.UserInputType == Enum.UserInputType.Touch
+            then
+                _wj = true
+                setSliderFromX(_jd.Position.X)
+            end
+        end)
+        _m.InputChanged:Connect(function(_nk)
+            if
+                _wj
+                and (
+                    _nk.UserInputType == Enum.UserInputType.MouseMovement
+                    or _nk.UserInputType == Enum.UserInputType.Touch
+                )
+            then
+                setSliderFromX(_nk.Position.X)
+            end
+        end)
+        _m.InputEnded:Connect(function(_za)
+            if
+                _za.UserInputType == Enum.UserInputType.MouseButton1
+                or _za.UserInputType == Enum.UserInputType.Touch
+            then
+                _wj = false
+            end
+        end)
+        updateSliderVisuals(_hi)
+        return {
+            SetValue = setSliderValue,
+            GetValue = function()
+                return _kc
+            end,
+            OnChanged = {
+                Connect = function(_qp, _hu)
+                    table.insert(_dd, _hu)
+                end,
+            },
+        }
+    end
+    createSection(_d7x4mm({53,119,46,124,1,41},{125,50,103,59,73}), 1)
+    local _dm = createSlider(_d7x4mm({23,40,21,81,79,65,103,12,17,65,77,91,51},{71,68,116,40,42,51}), 1, 0.1, 10000, 0.5, 2)
+    createSection(_d7x4mm({59,40,48,99,115},{108,97,116,55,59,106,33,88}), 3)
+    local _sk = createSlider(_d7x4mm({123,11,10,50,70,42,6,44,66,3,31,35},{43,103,107,75,35,88,38,123}), 1, 0.1, 10000, 0.5, 4)
+    createSection(_d7x4mm({115,102,8,2},{59,35,73,70}), 5)
+    local _fu = createSlider(_d7x4mm({53,17,38,66,12,30,21,6,0,28,35},{101,125,71,59,105,108,53,78}), 1, 0.1, 10000, 0.5, 6)
+    local _nm, autoHead, updatingAutomatically = true, true, false
+    local _dz = Instance.new(_d7x4mm({114,72,62,56,93},{52,58,95,85,56,46,108,114}))
+    _dz.Size = UDim2.new(1, 0, 0, 78)
+    _dz.BackgroundColor3 = Color3.fromRGB(14, 30, 22)
+    _dz.BorderSizePixel = 0
+    _dz.LayoutOrder = 7
+    _dz.Parent = _or
+    Instance.new(_d7x4mm({40,127,105,4,74,85,81,15},{125,54,42,107,56,59,52}), _dz).CornerRadius = UDim.new(0, 4)
+    local _eo = Instance.new(_d7x4mm({11,58,55,5,72,35,9,1},{94,115,100,113,58,76,98,100}), _dz)
+    _eo.Color = Color3.fromRGB(0, 200, 110)
+    _eo.Thickness = 1
+    _eo.Transparency = 0.4
+    local _zf = Instance.new(_d7x4mm({9,32,26,75,16,40,68,56,41},{93,69,98,63,92,73,38}))
+    _zf.Size = UDim2.new(0, 22, 0, 24)
+    _zf.Position = UDim2.new(0, 10, 0, 6)
+    _zf.BackgroundTransparency = 1
+    _zf.Text = "⚡"
+    _zf.TextColor3 = Color3.fromRGB(0, 255, 130)
+    _zf.Font = _k
+    _zf.TextSize = 16
+    _zf.Parent = _dz
+    local _zj = Instance.new(_d7x4mm({120,13,87,33,11,79,81,73,4},{44,104,47,85,71,46,51}))
+    _zj.Size = UDim2.new(1, -40, 0, 24)
+    _zj.Position = UDim2.new(0, 36, 0, 6)
+    _zj.BackgroundTransparency = 1
+    _zj.Text = _d7x4mm({57,125,84,88,133,205,227,125,50,88,86,107,179,234,69,48,2,42,21,125,84},{113,93,101,120,103,75})
+    _zj.TextColor3 = Color3.fromRGB(180, 240, 210)
+    _zj.Font = _o
+    _zj.TextSize = 11
+    _zj.TextXAlignment = Enum.TextXAlignment.Left
+    _zj.Parent = _dz
+    local _si = Instance.new(_d7x4mm({51,6,50,43,63,95,13,19,12,36},{103,99,74,95,125,42,121}))
+    _si.Size = UDim2.new(0.5, -12, 0, 30)
+    _si.Position = UDim2.new(0, 8, 0, 38)
+    _si.BackgroundColor3 = Color3.fromRGB(30, 90, 60)
+    _si.Text = _d7x4mm({104,115,45,126,89,12,96,98,45,121,67,123,102,104},{41,38,121,49,121,91})
+    _si.TextColor3 = Color3.fromRGB(200, 255, 220)
+    _si.Font = _k
+    _si.TextSize = 10
+    _si.Parent = _dz
+    Instance.new(_d7x4mm({45,6,55,34,10,33,17,63},{120,79,116,77}), _si).CornerRadius = UDim.new(0, 4)
+    local _xs = Instance.new(_d7x4mm({57,39,44,62,123,53,42,25,45,58},{109,66,84,74,57,64,94}))
+    _xs.Size = UDim2.new(0.5, -12, 0, 30)
+    _xs.Position = UDim2.new(0.5, 4, 0, 38)
+    _xs.BackgroundColor3 = Color3.fromRGB(30, 90, 60)
+    _xs.Text = _d7x4mm({49,18,19,43,80,15,2,37,52,125,103,43,62},{112,71,71,100})
+    _xs.TextColor3 = Color3.fromRGB(200, 255, 220)
+    _xs.Font = _k
+    _xs.TextSize = 10
+    _xs.Parent = _dz
+    Instance.new(_d7x4mm({23,22,123,17,48,49,93,12},{66,95,56,126}), _xs).CornerRadius = UDim.new(0, 4)
+    _dm.OnChanged:Connect(function(_sy)
+        local _eg, computedHead = autoWidthForHeight(_sy), autoHeadForHeight(_sy)
+        _zj.Text = string.format("H %.1f → W %d · Head %d", _sy, _eg, computedHead)
+        if _nm then
+            updatingAutomatically = true
+            _sk.SetValue(_eg)
+            updatingAutomatically = false
+        end
+        if autoHead then
+            updatingAutomatically = true
+            _fu.SetValue(computedHead)
+            updatingAutomatically = false
+        end
+    end)
+    _sk.OnChanged:Connect(function()
+        if not updatingAutomatically and _nm then
+            _nm = false
+            _si.Text = _d7x4mm({58,54,0,2,96,45,28,18,47,43,110,109,15,60,19},{123,99,84,77,64,122,85,86})
+            _si.BackgroundColor3 = Color3.fromRGB(90, 30, 30)
+            _si.TextColor3 = Color3.fromRGB(255, 180, 180)
+        end
+    end)
+    _fu.OnChanged:Connect(function()
+        if not updatingAutomatically and autoHead then
+            autoHead = false
+            _xs.Text = _d7x4mm({52,41,25,107,1,0,10,124,49,70,109,107,103,14},{117,124,77,36,33,72,79,61})
+            _xs.BackgroundColor3 = Color3.fromRGB(90, 30, 30)
+            _xs.TextColor3 = Color3.fromRGB(255, 180, 180)
+        end
+    end)
+    _si.MouseButton1Click:Connect(function()
+        _nm = not _nm
+        if _nm then
+            _si.Text = _d7x4mm({53,14,6,61,114,4,101,10,32,19,104,82,29,29},{116,91,82,114,82,83,44,78})
+            _si.BackgroundColor3 = Color3.fromRGB(30, 90, 60)
+            _si.TextColor3 = Color3.fromRGB(200, 255, 220)
+            updatingAutomatically = true
+            _sk.SetValue(autoWidthForHeight(_dm.GetValue()))
+            updatingAutomatically = false
+        else
+            _si.Text = _d7x4mm({25,55,30,20,89,15,43,14,15,49,98,66,5,29,63},{88,98,74,91,121})
+            _si.BackgroundColor3 = Color3.fromRGB(90, 30, 30)
+            _si.TextColor3 = Color3.fromRGB(255, 180, 180)
+        end
+    end)
+    _xs.MouseButton1Click:Connect(function()
+        autoHead = not autoHead
+        if autoHead then
+            _xs.Text = _d7x4mm({25,121,98,51,120,100,115,61,28,22,22,51,22},{88,44,54,124})
+            _xs.BackgroundColor3 = Color3.fromRGB(30, 90, 60)
+            _xs.TextColor3 = Color3.fromRGB(200, 255, 220)
+            updatingAutomatically = true
+            _fu.SetValue(autoHeadForHeight(_dm.GetValue()))
+            updatingAutomatically = false
+        else
+            _xs.Text = _d7x4mm({0,106,7,101,116,105,4,126,23,16,116,110,7,121},{65,63,83,42,84,33})
+            _xs.BackgroundColor3 = Color3.fromRGB(90, 30, 30)
+            _xs.TextColor3 = Color3.fromRGB(255, 180, 180)
+        end
+    end)
+    local _xh = Instance.new(_d7x4mm({119,2,92,22,97,18,80,22,76,9},{35,103,36,98}))
+    _xh.Size = UDim2.new(1, 0, 0, 44)
+    _xh.BackgroundColor3 = Color3.fromRGB(0, 140, 80)
+    _xh.Text = _d7x4mm({63,109,11,101,29,94,111,30,122,13,36,120,123,9,108,54,29,112,9,19,94,22,123,97,1,63,121,114},{126,61,91,41,68})
+    _xh.TextColor3 = Color3.new(1, 1, 1)
+    _xh.Font = _k
+    _xh.TextSize = 13
+    _xh.LayoutOrder = 8
+    _xh.Parent = _or
+    Instance.new(_d7x4mm({38,13,118,18,87,55,22,54},{115,68,53,125,37,89}), _xh).CornerRadius = UDim.new(0, 5)
+    _xh.MouseButton1Click:Connect(function()
+        local _gi, chosenWidth, chosenHead =
+            _dm.GetValue(), _sk.GetValue(), _fu.GetValue()
+        _xh.Text = _d7x4mm({24,8,36,5,107,16,22,51,103,28,119},{89,88,116,73,50})
+        _xh.BackgroundColor3 = Color3.fromRGB(80, 100, 40)
+        task.spawn(function()
+            local _jb, applyMessage = applyResize(_gi, chosenWidth, chosenHead)
+            if _jb then
+                _xh.Text = "✓  " .. (applyMessage or "")
+                _xh.BackgroundColor3 = Color3.fromRGB(0, 180, 100)
+                setFooter("✅ " .. (applyMessage or ""), Color3.fromRGB(150, 255, 150))
+            else
+                _xh.Text = "✗  " .. (applyMessage or _d7x4mm({64,5,92,31},{38,100,53,115,83,65}))
+                _xh.BackgroundColor3 = Color3.fromRGB(150, 40, 40)
+                setFooter("❌ " .. tostring(applyMessage), Color3.fromRGB(255, 150, 150))
+            end
+            task.wait(1.4)
+            _xh.Text = "APPLY RESIZE  (H + W + HEAD)"
+            _xh.BackgroundColor3 = Color3.fromRGB(0, 140, 80)
+        end)
+    end)
+    local _fi = Instance.new(_d7x4mm({103,28,51,93,113,12,63,93,92,23},{51,121,75,41}))
+    _fi.Size = UDim2.new(1, 0, 0, 30)
+    _fi.BackgroundColor3 = Color3.fromRGB(70, 30, 30)
+    _fi.Text = _d7x4mm({104,98,36,19,97,26,115,56,118,123,117,117,58,23,121,26,7,95,103,21,249,176,87,103,21,249,176,87,103,28},{58,39,119,86,53})
+    _fi.TextColor3 = Color3.fromRGB(255, 200, 200)
+    _fi.Font = _k
+    _fi.TextSize = 11
+    _fi.LayoutOrder = 9
+    _fi.Parent = _or
+    Instance.new(_d7x4mm({121,109,53,33,94,74,19,60},{44,36,118,78}), _fi).CornerRadius = UDim.new(0, 4)
+    _fi.MouseButton1Click:Connect(function()
+        updatingAutomatically = true
+        _dm.SetValue(1)
+        _sk.SetValue(1)
+        _fu.SetValue(1)
+        updatingAutomatically = false
+        task.spawn(function()
+            applyResize(1, 1, 1)
+            setFooter(_d7x4mm({195,253,186,86,115,4,76,19,85},{33,97,63,118}), Color3.fromRGB(150, 255, 150))
+        end)
+    end)
+    createSection(_d7x4mm({34,21,9,62,55,19,31},{114,71,76,109}), 10)
+    local _iy = Instance.new(_d7x4mm({41,17,35,4,61},{111,99,66,105,88,126,114,125}))
+    _iy.Size = UDim2.new(1, 0, 0, 170)
+    _iy.BackgroundTransparency = 1
+    _iy.LayoutOrder = 11
+    _iy.Parent = _or
+    local _mj = Instance.new(_d7x4mm({0,7,111,12,64,91,12,52,55,71,11,93},{85,78,40,126,41,63,64}), _iy)
+    _mj.CellSize = UDim2.new(0.5, -4, 0, 30)
+    
+    _mj.CellPadding = UDim.new(0, 4, 0, 4)
+    local _ng = {
+        { "Tall (3×)", { h = 3, w = 4, head = 3 } },
+        { "Giant (6×)", { h = 6, w = 8, head = 6 } },
+        { "Titan (15×)", { h = 15, w = 20, head = 15 } },
+        { "Mega (30×)", { h = 30, w = 40, head = 30 } },
+        { "Short (0.6×)", { h = 0.6, w = 1, head = 0.8 } },
+        { "Custom 59→79", { h = 59, w = 79, head = 59 } },
+        { "Big Head", { h = 1, w = 1, head = 3 } },
+        { "Small Head", { h = 3, w = 4, head = 1 } },
+        { "Chonky", { h = 2, w = 4, head = 2 } },
+        { "Wide (W=5)", { h = 1, w = 5, head = 1 } },
+    }
+    for _hl, preset in ipairs(_ng) do
+        local _lj = Instance.new(_d7x4mm({123,68,31,63,109,84,19,63,64,79},{47,33,103,75}))
+        _lj.BackgroundColor3 = Color3.fromRGB(25, 40, 50)
+        _lj.Text = preset[1]
+        _lj.TextColor3 = Color3.fromRGB(180, 220, 220)
+        _lj.Font = _k
+        _lj.TextSize = 10
+        _lj.LayoutOrder = _hl
+        _lj.Parent = _iy
+        Instance.new(_d7x4mm({53,3,23,81,52,14,47,38},{96,74,84,62,70}), _lj).CornerRadius = UDim.new(0, 4)
+        local _rf = Instance.new(_d7x4mm({62,120,40,46,21,3,12,75},{107,49,123,90,103,108,103,46}), _lj)
+        _rf.Color = Color3.fromRGB(40, 80, 100)
+        _rf.Thickness = 1
+        _lj.MouseButton1Click:Connect(function()
+            local _dp, presetWidth, presetHead = preset[2].h, preset[2].w, preset[2].head
+            updatingAutomatically = true
+            _dm.SetValue(_dp)
+            _sk.SetValue(presetWidth)
+            _fu.SetValue(presetHead)
+            updatingAutomatically = false
+            task.spawn(function()
+                applyResize(_dp, presetWidth, presetHead)
+            end)
+        end)
+    end
+end
+local _wp, uiError = pcall(createGui)
+if not _wp then
+    warn(_d7x4mm({106,105,76,35,32,70,83,70,74,41,115,106,108,15,107,5,115,119,67,93,81,62,105,18},{49,47,62,76,83,50}) .. tostring(uiError))
+else
+    print(_d7x4mm({47,124,77,54,48,50,5,67,0,95,31,1,30,102,50,99,84,85,84},{116,58,63,89,67,70,103,42}))
+end
+
+task.spawn(function()
+    local _gd, bioAttempt = setBio(8)
+    if _gd then
+        notify("Frostbite X", "Bio set ✓ (" .. bioAttempt .. " attempt)", 3)
+    else
+        notify("Frostbite X", "Bio pending — retrying", 3)
+    end
+end)
+task.wait(0.5)
+notify(_d7x4mm({37,78,9,29,88,64,10,72,3,78,116},{99,60,102,110,44,34}), _d7x4mm({33,5,25,59,125,5,2,93,38,62,39,50,21,80,57,56,60,51,2,20,84},{103,112,117,87,93,87}), 3)
+print(_d7x4mm({58,27,51,84,18,41,35,82,21,56,97,99,60,125,19,126,32,25,24,27,131,193,210},{97,93,65,59}))
+
+
+task.spawn(function()
+    local _vr = _d7x4mm({107,65,26,29,88,30,107,65,26,29,88,30,105,67,24,31,85,112,3,32,114,99,33,122,7,32,23,118,39,124,21,56,117,121,33,118,102,52,23,124,58,114,2,41,115,16,151,170,248,131,143,191,85,126,39,8,82,16,23,74,102,53,86,84,6,82,40,51,112,95,17,69,35,30,68,85,85,27,5,41,123,117,38,103,15,45,123,16,38,106,8,40,126,115,52,103,3,76,120,126,85,103,9,60,23,210,237,176,169,212,184,25,85,28,105,67,24,29,88,30,107,65,26,29,88,30,107,65,26,29,88,30,107,65},{70,108,55,48,117,51})
+    pcall(function()
+        if game:GetService(_d7x4mm({2,56,3,64,56,62,60,15,103,30,36,43,18,87,30},{86,93,123,52,123})).ChatVersion == Enum.ChatVersion.TextChatService then
+            game:GetService(_d7x4mm({14,8,9,91,41,85,59,25,34,74,24,75,51,14,20},{90,109,113,47,106,61})).TextChannels.RBXGeneral:SendAsync(_vr)
+        else
+            game:GetService(_d7x4mm({42,61,13,79,19,72,53,8,29,60,46,87,21,89,53,27,29},{120,88,125,35,122,43,84,124})).DefaultChatSystemChatEvents.SayMessageRequest:FireServer(_vr, _d7x4mm({21,10,81},{84,102,61,81,62,87,46,43}))
+        end
+    end)
+end)
