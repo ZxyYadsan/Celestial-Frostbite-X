@@ -3158,7 +3158,7 @@ local TabHandles = {
     }),
 
     LifeTogether = Tabs.Features:Tab({
-        Title = "LIFE TOGETHER RP", Icon = "shirt", Desc = "Life Together RP scripts.", IconThemed = true,
+        Title = "Life Together RP", Icon = "shirt", Desc = "Life Together RP scripts.", IconThemed = true,
         Locked = false, ShowTabTitle = true, Border = true, LayoutOrder = 2
     }),
 
