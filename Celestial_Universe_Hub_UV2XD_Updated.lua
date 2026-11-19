@@ -2957,12 +2957,12 @@ WindUI:Localization({
     SourceLanguage = "en",
     AutoTranslate = true,
     Notifications = true,
-    NoTranslations = { "Celestial Universe Hub UV2", "26ms", "Yadsan Celestial" },
+    NoTranslations = { "Celestial Universe Hub UV2", "26ms", "Celestial Syndicate" },
 
     Translations = {
         en = {
             HubTitle = "Celestial Universe Hub UV2",
-            GameTitle = "ASUKAREIGN X CELESTIAL SYNDICATE X ZERO MERCY",
+            GameTitle = "Yadsan Script",
             ThemeChanged = "Theme Changed",
             TransparencyTitle = "Transparency",
             TransparencyDisabled = "Transparency disabled",
@@ -3014,7 +3014,7 @@ local Window = WindUI:CreateWindow({
     Icon = "rbxassetid://105519970633948",
     Background = "rbxassetid://0",
     Author = "loc:GameTitle",
-    Folder = "ASUKAREIGN X CELESTIAL SYNDICATE X ZERO MERCY",
+    Folder = "Yadsan Script",
     Size = UDim2.fromOffset(620, 480),
     MinSize = Vector2.new(620, 480),
     Transparent = getgenv().TransparencyEnabled,
@@ -3078,7 +3078,7 @@ pcall(function()
 end)
 
 local OpenButtonConfig = {
-    Title = "Yadsan Celestial",
+    Title = "Celestial Syndicate",
     Icon = "rbxassetid://105519970633948",
     CornerRadius = UDim.new(0, 12),
     StrokeThickness = 2,
