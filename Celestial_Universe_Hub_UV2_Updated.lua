@@ -3276,7 +3276,7 @@ local Sections = {
 
 --// ADDED SCRIPT TABS
 local LifeTogetherSection = TabHandles.LifeTogether:Section({
-    Title = "LIFE TOGETHER RP", Desc = "Life Together RP script collection.", Icon = "shirt", Box = true, BoxBorder = true,
+    Title = "Life Together RP", Desc = "Life Together RP script collection.", Icon = "shirt", Box = true, BoxBorder = true,
     FontWeight = Enum.FontWeight.SemiBold, TextTransparency = 0.05, TextXAlignment = "Left", TextSize = 17, Opened = true
 })
 
@@ -3310,21 +3310,24 @@ local function AddRemoteScriptButton(section, title, desc, url)
 end
 
 --// Life Together Rp 
-AddRemoteScriptButton(LifeTogetherSection, "Yadsan Edition Spam", "Copy and explore stylish player outfits with the exclusive Yadsan Outfit Copier interface.", "https://raw.githubusercontent.com/yadsanpapa/Yadsan-/refs/heads/main/Yadsan_Outfit_Copier_OV1")
+AddRemoteScriptButton(LifeTogetherSection, "Yadsan Steal Copier", "Copy and explore stylish player outfits with the exclusive Yadsan Outfit Copier interface.", "https://raw.githubusercontent.com/ZxyYadsan/Celestial-Godverse-Hub-UV1-/refs/heads/main/Steal_Copier1.lua")
 AddRemoteScriptButton(LifeTogetherSection, "Celestial Gen X", "Experience Celestial Gen X with exclusive features, unique tools, and advanced customization interface.", "https://scriptblox.com/raw/LifeTogether-RP-Gen-X-Hub-236184")
-AddRemoteScriptButton(LifeTogetherSection, "Celestial Frostbite X", "Discover Frostbite X with icy styling, advanced resize features, and exclusive Celestial experience.", "https://raw.githubusercontent.com/yadsanpapa/Godverse-Hub-/refs/heads/main/CelestialFrostbiteX.lua")
+AddRemoteScriptButton(LifeTogetherSection, "Celestial Frostbite X", "Discover Frostbite X with icy styling, advanced resize features, and exclusive Celestial experience.", "")
 AddRemoteScriptButton(LifeTogetherSection, "Celestial Cryptic Hub", "Explore Celestial Cryptic Hub featuring unique troll-style tools, custom features, and exclusive interface.", "https://raw.githubusercontent.com/OnlyCryptic/Cryptic/main/main.lua")
 
 --// XD
-AddRemoteScriptButton(XDSection, "Yadsan Edition Spam", "Unleash legendary Yadsan Edition with a royal interface and premium customization feature.", "https://raw.githubusercontent.com/yadsanpapa/Yadsan-/refs/heads/main/Yadsan_Spammer_OV1")
-AddRemoteScriptButton(XDSection, "Zero Mercy Spammer V1", "Experience Zero Mercy Edition with a bold design, powerful features Shafi X Zenex.", "https://raw.githubusercontent.com/yadsanpapa/Yadsan-/refs/heads/main/Zm_Spammerv1byshafi.lua")
-AddRemoteScriptButton(XDSection, "Asuka Spammer Red", "Enter the Asuka Red Edition with a crimson theme, elite styling, and legendary team identity.", "https://raw.githubusercontent.com/yadsanpapa/Yadsan-/refs/heads/main/AsukaSpammerByYadsan.lua")
+AddRemoteScriptButton(XDSection, "Yadsan Edition Spam", "Unleash legendary Yadsan Edition with a royal interface and premium customization feature.", "https://raw.githubusercontent.com/ZxyYadsan/Celestial-Godverse-Hub-UV1-/refs/heads/main/Yadsan_editonSpammer.lua")
+AddRemoteScriptButton(XDSection, "Zero Mercy Spammer V1", "Experience Zero Mercy Edition with a bold design, powerful features Shafi X Zenex.", "https://raw.githubusercontent.com/ZxyYadsan/Celestial-Godverse-Hub-UV1-/refs/heads/main/ZeroMercySpammerV1ByShafiXZenex.lua")
+AddRemoteScriptButton(XDSection, "Asuka Spammer Red", "Enter the Asuka Red Edition with a crimson theme, elite styling, and legendary team identity.", "https://raw.githubusercontent.com/ZxyYadsan/Celestial-Godverse-Hub-UV1-/refs/heads/main/AsukaSpammerRedbyYadsan.lua")
+AddRemoteScriptButton(XDSection, "Asuka Spammer V2", "Experience the next evolution of Asuka Edition with an exclusive premium interface, stunning visuals, advanced customization, and signature Yadsan styling.", "https://raw.githubusercontent.com/ZxyYadsan/Asuka-Hub/refs/heads/main/AsukaSpammerV2vyYadsan.lua")
+AddRemoteScriptButton(XDSection, "Catel Gang Spammer", "Unleash the Catel Gang Edition with a bold premium interface, legendary Yadsan styling, and an exclusive customization experience.", "https://raw.githubusercontent.com/ZxyYadsan/Asuka-Hub/refs/heads/main/Catel_GangCTSpammerByYadsan.lua")
 
 --// YADSAN
-AddRemoteScriptButton(YadsanSection, "INFINITE YIELD", "Open Infinite Yield admin commands.", "https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source")
-AddRemoteScriptButton(YadsanSection, "FE R15 SONIC THE HEDGEHOG", "Load the FE R15 Sonic script.", "https://scriptblox.com/raw/Universal-Script-FE-R15-Sonic-The-Hedgehog-63923")
-AddRemoteScriptButton(YadsanSection, "FE SKY GLITCHER", "Load the sky glitcher script.", "https://rawscripts.net/raw/Universal-Script-sky-destroyer-V2-AXEZZ-110640")
-AddRemoteScriptButton(YadsanSection, "EMOTES", "Open the emote script.", "https://rawscripts.net/raw/Universal-Script-Gaze-emote-74592")
+AddRemoteScriptButton(YadsanSection, "Flames Hub", "Ignite your experience with Flames Hub, featuring a fiery interface and a collection of exciting features.", "https://raw.githubusercontent.com/ZxyYadsan/Celestial-Frostbite-X/refs/heads/main/FlamesHubByYadsan.lua")
+AddRemoteScriptButton(YadsanSection, "Infinite Yield", "Unlock a classic Roblox admin experience with an extensive command library and convenient in-game controls.", "https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source")
+AddRemoteScriptButton(YadsanSection, "FE R15 Sonic The Hedgehog", "Transform your R15 experience with a Sonic-themed FE script and iconic hedgehog-inspired gameplay.", "https://scriptblox.com/raw/Universal-Script-FE-R15-Sonic-The-Hedgehog-63923")
+AddRemoteScriptButton(YadsanSection, "FE Sky Glitcher", "Discover sky-themed visual effects and unusual in-game experiences with the Sky Glitcher script.", "https://rawscripts.net/raw/Universal-Script-sky-destroyer-V2-AXEZZ-110640")
+AddRemoteScriptButton(YadsanSection, "G Emotes", "Express yourself with stylish animations and fun emotes to give your character a unique personality.", "https://rawscripts.net/raw/Universal-Script-Gaze-emote-74592")
 
 Window:SelectTab(1)
 
