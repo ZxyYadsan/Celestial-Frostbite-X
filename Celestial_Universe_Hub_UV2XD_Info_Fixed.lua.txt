@@ -1,5 +1,5 @@
 -- If you're struggling with coding, feel free to use this source, and you can join my Instagram to learn and improve your coding skills together with us 😚: 
-https://ig.me/j/sgIDYr7jLIc8AdN_/
+https://discord.gg/gFC9eqRKA
 local Players = game:GetService("Players")
 local Workspace = game:GetService("Workspace")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
@@ -25,7 +25,7 @@ local YadsanConfig = {
     Name = "Yadsan",
     RobloxId = "Yadsan_GodVerse",
     Tagline = "Celestial Syndicate",
-    PhotoId = "", -- Put your uploaded Roblox image/decal asset ID here
+    PhotoId = "rbxassetid://...", -- Put your uploaded Roblox image/decal asset ID here
 }
 
 local WindUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/72msreal-pixel/WindUI/refs/heads/main/Main.luau"))()
@@ -4060,7 +4060,7 @@ WindUI:Notify({
     Title = "Celestial Universe Hub UV2",
     Content = "Join our Discord for updates, new features and support!",
     Duration = 4,
-    Icon = "Yadsan: Instagram",
+    Icon = "Yadsan: Discord",
 })
 
 local Players = game:GetService("Players")
