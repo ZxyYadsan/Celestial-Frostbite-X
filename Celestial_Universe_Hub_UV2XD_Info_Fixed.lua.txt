@@ -2953,7 +2953,7 @@ WindUI:Localization({
     Translations = {
         en = {
             HubTitle = "Celestial Universe Hub UV2",
-            GameTitle = "Celestial Syndicate",
+            GameTitle = "Yadsan Script",
             ThemeChanged = "Theme Changed",
             TransparencyTitle = "Transparency",
             TransparencyDisabled = "Transparency disabled",
@@ -3069,7 +3069,7 @@ pcall(function()
 end)
 
 local OpenButtonConfig = {
-    Title = "ASUKAREIGN X CELESTIAL SYNDICATE X ZERO MERCY",
+    Title = "CELESTIAL SYNDICATE",
     Icon = YadsanConfig.PhotoId,
     CornerRadius = UDim.new(0, 12),
     StrokeThickness = 2,
