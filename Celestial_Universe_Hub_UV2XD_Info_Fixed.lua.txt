@@ -1,5 +1,5 @@
--- If you're struggling with coding, feel free to use this source, and you can join my Instagram to learn and improve your coding skills together with us 😚: 
-https://discord.gg/gFC9eqRKA
+-- If you're struggling with coding, feel free to use this source, and you can join my Discord to learn and improve your coding skills together with us 😚: discord.gg/gFC9eqRKA
+
 local Players = game:GetService("Players")
 local Workspace = game:GetService("Workspace")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
@@ -24,8 +24,8 @@ end)
 local YadsanConfig = {
     Name = "Yadsan",
     RobloxId = "Yadsan_GodVerse",
-    Tagline = "Celestial Syndicate",
-    PhotoId = "rbxassetid://...", -- Put your uploaded Roblox image/decal asset ID here
+    Tagline = "ASUKAREIGN X CELESTIAL SYNDICATE X ZERO MERCY",
+    PhotoId = "rbxassetid://0", -- Put your uploaded Roblox image/decal asset ID here
 }
 
 local WindUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/72msreal-pixel/WindUI/refs/heads/main/Main.luau"))()
@@ -2790,7 +2790,7 @@ function Main.dcFetch()
 
     local api = ("https://discord.com/api/v10/invites/%s?with_counts=true&with_expiration=true"):format(code)
     local data = Main.clone(HttpService):JSONDecode(Main.dcGet(api))
-    if not data or not data.guild then error(data and data.message or "Invalid Instagram invite") end
+    if not data or not data.guild then error(data and data.message or "Invalid Discord invite") end
 
     return code, data
 end
@@ -2948,12 +2948,12 @@ WindUI:Localization({
     SourceLanguage = "en",
     AutoTranslate = true,
     Notifications = true,
-    NoTranslations = { "Celestial Universe Hub UV2", "Yadsan", "Yadsan_GodVerse", "Celestial Syndicate" },
+    NoTranslations = { "Celestial Universe Hub UV2", "Yadsan", "Yadsan_GodVerse", "ASUKAREIGN X CELESTIAL SYNDICATE X ZERO MERCY" },
 
     Translations = {
         en = {
             HubTitle = "Celestial Universe Hub UV2",
-            GameTitle = "Celestial Syndicate",
+            GameTitle = "ASUKAREIGN X CELESTIAL SYNDICATE X ZERO MERCY",
             ThemeChanged = "Theme Changed",
             TransparencyTitle = "Transparency",
             TransparencyDisabled = "Transparency disabled",
@@ -2973,7 +2973,7 @@ WindUI:Localization({
             Troll = "Troll",
             Misc = "Misc",
             Settings = "Settings",
-            UpdateDesc = "- Fix Auto fling \n- Fix Trapper V2/V3 \n- New Star Glitcher",
+            UpdateDesc = "- Fix auto fling \n- Fix teleport tool \n- New auto wall hop",
             InformationDesc = "About the hub",
             MainDesc = "Main features",
             StaminaDesc = "Stamina options",
@@ -3005,7 +3005,7 @@ local Window = WindUI:CreateWindow({
     Icon = YadsanConfig.PhotoId,
     Background = "rbxassetid://0",
     Author = "loc:GameTitle",
-    Folder = "Celestial Syndicate",
+    Folder = "ASUKAREIGN X CELESTIAL SYNDICATE X ZERO MERCY",
     Size = UDim2.fromOffset(620, 480),
     MinSize = Vector2.new(620, 480),
     Transparent = getgenv().TransparencyEnabled,
@@ -3069,7 +3069,7 @@ pcall(function()
 end)
 
 local OpenButtonConfig = {
-    Title = "Celestial Syndicate",
+    Title = "ASUKAREIGN X CELESTIAL SYNDICATE X ZERO MERCY",
     Icon = YadsanConfig.PhotoId,
     CornerRadius = UDim.new(0, 12),
     StrokeThickness = 2,
@@ -3158,7 +3158,7 @@ local TabHandles = {
     }),
 
     LifeTogether = Tabs.Features:Tab({
-        Title = "Life Together RP", Icon = "shirt", Desc = "Life Together RP scripts.", IconThemed = true,
+        Title = "LIFE TOGETHER RP", Icon = "shirt", Desc = "Life Together RP scripts.", IconThemed = true,
         Locked = false, ShowTabTitle = true, Border = true, LayoutOrder = 2
     }),
 
@@ -3312,7 +3312,7 @@ AddRemoteScriptButton(LifeTogetherSection, "Celestial Cryptic Hub", "Explore Cel
 --// XD
 AddRemoteScriptButton(XDSection, "Yadsan Edition Spam", "Unleash legendary Yadsan Edition with a royal interface and premium customization feature.", "https://raw.githubusercontent.com/ZxyYadsan/Asuka-Hub/refs/heads/main/YadsanEditionSpammerUniverse.lua")
 AddRemoteScriptButton(XDSection, "Zero Mercy Spammer V1", "Experience Zero Mercy Edition with a bold design, powerful features Shafi X Zenex.", "https://raw.githubusercontent.com/ZxyYadsan/Celestial-Godverse-Hub-UV1-/refs/heads/main/ZeroMercySpammerV1ByShafiXZenex.lua")
-AddRemoteScriptButton(XDSection, "Asuka Spammer Red", "Enter the Asuka Red Edition with a crimson theme, elite styling, and legendary team identity.", "https://raw.githubusercontent.com/ZxyYadsan/Asuka-Hub/refs/heads/main/AsukaSpammerRedByLeader.lua")
+AddRemoteScriptButton(XDSection, "Asuka Spammer Red", "Enter the Asuka Red Edition with a crimson theme, elite styling, and legendary team identity.", "https://raw.githubusercontent.com/ZxyYadsan/Celestial-Godverse-Hub-UV1-/refs/heads/main/AsukaSpammerRedbyYadsan.lua")
 AddRemoteScriptButton(XDSection, "Asuka Spammer V2", "Experience the next evolution of Asuka Edition with an exclusive premium interface, stunning visuals, advanced customization, and signature Yadsan styling.", "https://raw.githubusercontent.com/ZxyYadsan/Asuka-Hub/refs/heads/main/AsukaSpammerV2vyYadsan.lua")
 AddRemoteScriptButton(XDSection, "Catel Gang Spammer", "Unleash the Catel Gang Edition with a bold premium interface, legendary Yadsan styling, and an exclusive customization experience.", "https://raw.githubusercontent.com/ZxyYadsan/Asuka-Hub/refs/heads/main/Catel_GangCTSpammerByYadsan.lua")
 
@@ -4060,7 +4060,7 @@ WindUI:Notify({
     Title = "Celestial Universe Hub UV2",
     Content = "Join our Discord for updates, new features and support!",
     Duration = 4,
-    Icon = "Yadsan: Discord",
+    Icon = "Yadsan:Discord",
 })
 
 local Players = game:GetService("Players")
