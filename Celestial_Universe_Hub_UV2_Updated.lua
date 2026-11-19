@@ -25,7 +25,7 @@ local WindUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/72msre
 local Modules = loadstring(game:HttpGet("https://raw.githubusercontent.com/72msreal-pixel/WindUI/refs/heads/main/Modules.luau"))()
 local LangController = Modules:Install(WindUI)
 
-WindUI.Creator.AddIcons("NaN", {
+WindUI.Creator.AddIcons("Yadsan", {
     Discord = "rbxassetid://76958837964147",
     Robux = "rbxassetid://92207254124270",
     Youtube = "rbxassetid://117641022373030",
@@ -466,7 +466,7 @@ ESP.Connections.Render = RunService.RenderStepped:Connect(function(dt)
     end
 end)
 
-local old = getgenv().NaNMain
+local old = getgenv().YadsanMain
 if old then
     pcall(old.adToggle, false)
     pcall(old.bpUnload)
@@ -559,7 +559,7 @@ local Main = {
     cfgName = "",
 }
 
-getgenv().NaNMain = Main
+getgenv().YadsanMain = Main
 Main.toolClass.__index = Main.toolClass
 Main.hopParams.MaxParts = 10
 Main.espClass.__index = Main.espClass
@@ -1428,13 +1428,13 @@ function Main.toolHookDrop()
 
     Main.toolHooked = true
     local env = getgenv()
-    env.NaNTools = Main
-    if env.NaNHooked then return end
-    env.NaNHooked = true
+    env.YadsanTools = Main
+    if env.YadsanHooked then return end
+    env.YadsanHooked = true
 
     local oldNc
     oldNc = hookmetamethod(game, "__namecall", newcclosure(function(self, ...)
-        local cur = env.NaNTools
+        local cur = env.YadsanTools
         if cur and cur.toolDrops[self] then
             local m = getnamecallmethod()
             local t = (m == "FireServer" or m == "InvokeServer") and cur.toolCurrent()
@@ -1921,9 +1921,9 @@ function Main.glideStart(name, hum, root)
         hum:ChangeState(cfg.State)
     end
 
-    Main.mvAttach = Main.new("Attachment", { Name = "NaNGlideAttachment" }, root)
+    Main.mvAttach = Main.new("Attachment", { Name = "YadsanGlideAttachment" }, root)
     Main.mvVel = Main.new("LinearVelocity", {
-        Name = "NaNGlideVelocity",
+        Name = "YadsanGlideVelocity",
         Attachment0 = Main.mvAttach,
         RelativeTo = Enum.ActuatorRelativeTo.World,
         VelocityConstraintMode = Enum.VelocityConstraintMode.Vector,
@@ -1933,7 +1933,7 @@ function Main.glideStart(name, hum, root)
 
     if cfg.Freeze then
         Main.mvAligner = Main.new("AlignOrientation", {
-            Name = "NaNGlideAligner",
+            Name = "YadsanGlideAligner",
             Mode = Enum.OrientationAlignmentMode.OneAttachment,
             Attachment0 = Main.mvAttach,
             RigidityEnabled = true,
@@ -3014,7 +3014,7 @@ local Window = WindUI:CreateWindow({
     Icon = "rbxassetid://105519970633948",
     Background = "rbxassetid://0",
     Author = "loc:GameTitle",
-    Folder = "NaN Hub - Univereal Script",
+    Folder = "Celestial Syndicate - Yadsan Script",
     Size = UDim2.fromOffset(620, 480),
     MinSize = Vector2.new(620, 480),
     Transparent = getgenv().TransparencyEnabled,
@@ -3091,7 +3091,7 @@ local OpenButtonConfig = {
 Window:EditOpenButton(OpenButtonConfig)
 
 Window:Tag({
-    Title = "v0.2.1",
+    Title = "v2.0",
     Icon = "cog",
     Color = WindUI:Gradient({
         ["0"] = {
@@ -3323,7 +3323,7 @@ AddRemoteScriptButton(XDSection, "Asuka Spammer V2", "Experience the next evolut
 AddRemoteScriptButton(XDSection, "Catel Gang Spammer", "Unleash the Catel Gang Edition with a bold premium interface, legendary Yadsan styling, and an exclusive customization experience.", "https://raw.githubusercontent.com/ZxyYadsan/Asuka-Hub/refs/heads/main/Catel_GangCTSpammerByYadsan.lua")
 
 --// YADSAN
-AddRemoteScriptButton(YadsanSection, "Flames Hub", "Ignite your experience with Flames Hub, featuring a fiery interface and a collection of exciting features.", "https://raw.githubusercontent.com/ZxyYadsan/Celestial-Frostbite-X/refs/heads/main/FlamesHubByYadsan.lua")
+AddRemoteScriptButton(YadsanSection, "Flames Hub Gold", "Ignite your experience with Flames Hub, featuring a fiery interface and a collection of exciting features.", "https://raw.githubusercontent.com/ZxyYadsan/Celestial-Frostbite-X/refs/heads/main/FlamesHubByYadsan.lua")
 AddRemoteScriptButton(YadsanSection, "Infinite Yield", "Unlock a classic Roblox admin experience with an extensive command library and convenient in-game controls.", "https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source")
 AddRemoteScriptButton(YadsanSection, "FE R15 Sonic The Hedgehog", "Transform your R15 experience with a Sonic-themed FE script and iconic hedgehog-inspired gameplay.", "https://scriptblox.com/raw/Universal-Script-FE-R15-Sonic-The-Hedgehog-63923")
 AddRemoteScriptButton(YadsanSection, "FE Sky Glitcher", "Discover sky-themed visual effects and unusual in-game experiences with the Sky Glitcher script.", "https://rawscripts.net/raw/Universal-Script-sky-destroyer-V2-AXEZZ-110640")
